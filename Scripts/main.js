@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 
 function createWindow() {
@@ -12,6 +12,8 @@ function createWindow() {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true,
             nodeIntegration: false,
+            sandbox: false,
+            enableRemoteModule: false,
         },
 
         menu: null,
@@ -35,11 +37,16 @@ app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
 
-// File Explorer
+// Chose Path file expolore
 ipcMain.handle('open-file-dialog', async () => {
   const { canceled, filePaths } = await dialog.showOpenDialog({
     properties: ['openFile']
   });
   if (canceled || filePaths.length === 0) return null;
   return filePaths[0];
+});
+
+// Open Path file expolore
+ipcMain.on('open-path-in-explorer', (event, path) => {
+  shell.openPath(path); // Opens folder or file in system file explorer
 });
