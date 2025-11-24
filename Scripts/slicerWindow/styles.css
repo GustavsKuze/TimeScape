@@ -205,3 +205,58 @@ img {
     color: #ffc400; 
     transition: color 0.3s ease;
 }
+
+/* Basic */
+#fileSelection {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+
+    width: 100%;
+    transform: translateY(-80px);     
+}
+
+    .filePath {
+        position: relative;
+
+        font-size: 24px;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+
+        color: #ff8800;
+    }
+
+    .folderImage {
+        width: 48px;
+        height: 48px;
+
+        pointer-events: all;
+
+        transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+    }
+
+    .folderImage:hover{
+        width: 64px;
+        height: 64px;
+        transform: rotate(10deg);
+
+        transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+    }
+
+#errorBlock {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    width: 100%;   
+}
+
+    .errorImage {
+        width: 64px;
+        height: 64px;
+    }
