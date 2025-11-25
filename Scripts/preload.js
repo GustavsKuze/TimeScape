@@ -7,9 +7,7 @@ contextBridge.exposeInMainWorld('electronAPI', {
   openPathInExplorer: (path) => ipcRenderer.send('open-path-in-explorer', path),
   resolvePath: (...segments) => path.join(__dirname, ...segments),
 
-  // New Window
-  createMainWindow: () => ipcRenderer.send('open-main-window'),
-  createSlicerWindow: () => ipcRenderer.send('open-slicer-window')
-});
+  // Resize Window
+  resizeWindow: (width, height) => ipcRenderer.send('resize-window', width, height),
 
-// New Window
+});
