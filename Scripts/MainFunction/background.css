@@ -9,12 +9,12 @@ body {
     background-repeat: repeat;
 }
 
-/* Prevent highlight */
+body::-webkit-scrollbar {
+    display: none;
+}
+
 * {
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* Internet Explorer */
-    user-select: none;         /* Non-prefixed version */
+    -webkit-user-select: none;
 
     /* allow for out of bounds */
     overflow: visible;

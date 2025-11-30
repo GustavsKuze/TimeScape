@@ -13,26 +13,27 @@
     margin-right: 20px;
 
     --slide-preAnimation-pos: translate(-100px,0px);
-    --slide-postAnimation-pos: translate(0px,0px);
+    --slide-postAnimation-pos: translate(8px,0px);
     }
 
     #titleCardText {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
-        --slide-preAnimation-pos: translate(-100px,0px);
-        --slide-postAnimation-pos: translate(64px,0px);
     }
 
         #titleCardLine1 {
             margin-bottom: 5px;
-            transform: translate(-8px,-8px);
+
+            --slide-preAnimation-pos: translate(-150px,-8px);
+            --slide-postAnimation-pos: translate(-8px,-8px);
         }
 
         #titleCardLine2 {
             margin-top: 0px;
-            transform: translate(0px,-16px);
+
+            --slide-preAnimation-pos: translate(-150px,-16px);
+            --slide-postAnimation-pos: translate(0px,-16px);
         }
 
 
@@ -52,6 +53,9 @@
 
 #pagePickerText {
     margin-bottom: 5px;
+
+    --slide-preAnimation-pos: translate(0px,200px);
+    --slide-postAnimation-pos: translate(0px,0px);
 }
 
     #pageButtonsContainer {
@@ -68,8 +72,16 @@
             align-items: center;
         }
 
+            #cutImage {
+                --slide-preAnimation-pos: translate(0px,100px);
+                --slide-postAnimation-pos: translate(0px,0px);
+            }
+
             #slicerText {
                 transition: color 0.3s ease;
+                
+                --slide-preAnimation-pos: translate(0px,300px);
+                --slide-postAnimation-pos: translate(0px,0px);
             }
 
             #cutImage:hover + #slicerText {
@@ -84,9 +96,16 @@
             align-items: center;
         }
 
+            #monitorImage {
+                --slide-preAnimation-pos: translate(0px,200px);
+                --slide-postAnimation-pos: translate(0px,0px);
+            }
 
             #displayText {
                 transition: color 0.3s ease;
+
+                --slide-preAnimation-pos: translate(0px,200px);
+                --slide-postAnimation-pos: translate(0px,0px);
             }
 
             #monitorImage:hover + #displayText {
@@ -101,9 +120,16 @@
             align-items: center;
         }
 
+            #folderImage {
+                --slide-preAnimation-pos: translate(0px,200px);
+                --slide-postAnimation-pos: translate(0px,0px);
+            }
 
             #folderText {
                 transition: color 0.3s ease;
+                
+                --slide-preAnimation-pos: translate(0px,200px);
+                --slide-postAnimation-pos: translate(0px,0px);
             }
 
             #folderImage:hover + #folderText {
