@@ -8,3 +8,37 @@ body {
     background-size: 80px 80px;
     background-repeat: repeat;
 }
+
+/* Prevent highlight */
+* {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer */
+    user-select: none;         /* Non-prefixed version */
+
+    /* allow for out of bounds */
+    overflow: visible;
+}
+
+img {
+    pointer-events: none;
+}
+
+/* Animation */
+.animatable {
+    /* transition propeites */
+    transition-property: transform, opacity;
+    transition-duration: var(--slide-duration-var, 1s); 
+    transition-delay: var(--slide-delay-var, 0s);
+    transition-timing-function: ease-out;
+
+    /* Starting Var */
+    transform: var(--slide-preAnimation-pos); 
+    opacity: 0;
+}
+
+.postAnimation {
+    /* end var */
+    transform: var(--slide-postAnimation-pos); 
+    opacity: 1;
+}

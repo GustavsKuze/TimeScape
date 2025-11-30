@@ -74,7 +74,7 @@
 
 
 .large-dynamic-icon {
-    pointer-events: all;
+    pointer-events:all;
 
     width: 128px;
     height: 128px;
@@ -83,8 +83,6 @@
 }
 
 .large-dynamic-icon:hover {
-    pointer-events: all;
-
     width: 144px;
     height: 144px;
     transform: rotate(10deg);
