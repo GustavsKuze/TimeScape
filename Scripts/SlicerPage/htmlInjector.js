@@ -23,7 +23,7 @@ const slicerMenuContent = `
     <div id="slicerOptions">
     </div>
 `
-const slicerMenuScripts = [];
+const slicerMenuScripts = ["../SlicerPage/startAnimation.js"];
 
 // Load content
 container.innerHTML = slicerMenuContent;
