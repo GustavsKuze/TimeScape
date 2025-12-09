@@ -4,6 +4,7 @@
 
     color: #ff8800;
     -webkit-text-stroke: 1px #925800;
+    transition: color 0.3s ease;
 }
 
 .orange-32 {
@@ -12,6 +13,7 @@
 
     color: #ff8800;
     -webkit-text-stroke: 1px #925800;
+    transition: color 0.3s ease;
 }
 
 .orange-24 {
@@ -19,6 +21,8 @@
     font-family: 'Ubuntu', sans-serif;
 
     color: #ff8800;
+    transition: color 0.3s ease;
+
 }
 
 
@@ -29,6 +33,7 @@
 
     color: #ffc400;
     -webkit-text-stroke: 1px #887400;
+    transition: color 0.3s ease;
 }
 
 .yellow-32 {
@@ -37,6 +42,7 @@
 
     color: #ffc400;
     -webkit-text-stroke: 1px #887400;
+    transition: color 0.3s ease;
 }
 
 .yellow-24 {
@@ -44,6 +50,7 @@
     font-family: 'Ubuntu', sans-serif;
 
     color: #ffc400;
+    transition: color 0.3s ease;
 }
 
 
@@ -54,6 +61,7 @@
 
     color: #ffffff;
     -webkit-text-stroke: 1px #1f1f1f;
+    transition: color 0.3s ease;
 }
 
 .white-32 {
@@ -62,6 +70,7 @@
 
     color: #ffffff;
     -webkit-text-stroke: 1px #1f1f1f;
+    transition: color 0.3s ease;
 }
 
 .white-24 {
@@ -69,6 +78,7 @@
     font-family: 'Ubuntu', sans-serif;
 
     color: #ffffff;
+    transition: color 0.3s ease;
 }
 
 

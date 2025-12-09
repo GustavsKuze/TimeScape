@@ -12,5 +12,11 @@ function startAnimation(elementId, durationSeconds = 1, delaySeconds = 0) {
     // Change the class
     setTimeout(() => {
         element.classList.add('postAnimation');
+
+        // Remove Stuff
+        const time = (durationSeconds + delaySeconds) * 1000;
+        setTimeout(() => {
+            element.classList.remove('animatable');
+        }, time);
     }, 0); 
 }

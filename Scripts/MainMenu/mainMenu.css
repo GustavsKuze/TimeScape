@@ -78,8 +78,6 @@
             }
 
             #slicerText {
-                transition: color 0.3s ease;
-                
                 --slide-preAnimation-pos: translate(0px,200px);
                 --slide-postAnimation-pos: translate(0px,0px);
             }
@@ -102,8 +100,6 @@
             }
 
             #displayText {
-                transition: color 0.3s ease;
-
                 --slide-preAnimation-pos: translate(0px,200px);
                 --slide-postAnimation-pos: translate(0px,0px);
             }
@@ -126,8 +122,6 @@
             }
 
             #folderText {
-                transition: color 0.3s ease;
-                
                 --slide-preAnimation-pos: translate(0px,200px);
                 --slide-postAnimation-pos: translate(0px,0px);
             }
