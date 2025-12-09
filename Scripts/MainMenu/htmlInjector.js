@@ -1,4 +1,4 @@
-const content = `
+const mainMenuContent = `
     <!-- Title Card -->
     <div id="titleCard">
         <img src="../../Assets/icon.ico" alt="titleImage" class="medium-static-icon animatable" id="titleImage">
@@ -28,11 +28,11 @@ const content = `
             </div>
     </div>
 `
-const scripts = ["../MainMenu/startAnimation.js", "../MainMenu/clickManager.js"];
+const mainMenuScripts = ["../MainMenu/startAnimation.js", "../MainMenu/clickManager.js"];
 
 // Load content
 const container = document.getElementById('wholePage');
-container.innerHTML = content;
+container.innerHTML = mainMenuContent;
 
 // Load Scripts
 function loadScript(scriptSrc, targetContainer) {
@@ -42,6 +42,6 @@ function loadScript(scriptSrc, targetContainer) {
     targetContainer.appendChild(script);
 }
 
-scripts.forEach(scriptSrc => {
+mainMenuScripts.forEach(scriptSrc => {
     loadScript(scriptSrc, container);
 });

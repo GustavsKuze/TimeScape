@@ -75,7 +75,7 @@ function createMainWindow() {
         },
 
         menu: null,
-        resizable: false,
+        resizable: true,
         title: "TimeScape",
         icon: path.join(__dirname, '..', '..', 'Assets', 'icon.ico'),
     });
