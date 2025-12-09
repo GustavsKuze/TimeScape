@@ -7,11 +7,11 @@ startAnimation('titleCardLine2', 1.2, 0.2);
 // Slicer Box
 startAnimation('pagePickerText', 1, 0.3);
 
-startAnimation('cutImage', 1, 5);
-startAnimation('slicerText', 1, 5);
+startAnimation('cutImage', 1, 0.4);
+startAnimation('slicerText', 1, 1);
 
-startAnimation('monitorImage', 1, 5);
-startAnimation('displayText', 1, 5);
+startAnimation('monitorImage', 1, 0.6);
+startAnimation('displayText', 1, 1.2);
 
-startAnimation('folderImage', 1, 5);
-startAnimation('folderText', 1, 5);
+startAnimation('folderImage', 1, 0.8);
+startAnimation('folderText', 1, 1.4);

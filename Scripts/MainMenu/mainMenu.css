@@ -73,14 +73,14 @@
         }
 
             #cutImage {
-                --slide-preAnimation-pos: translate(0px,100px);
+                --slide-preAnimation-pos: translate(0px,200px);
                 --slide-postAnimation-pos: translate(0px,0px);
             }
 
             #slicerText {
                 transition: color 0.3s ease;
                 
-                --slide-preAnimation-pos: translate(0px,300px);
+                --slide-preAnimation-pos: translate(0px,200px);
                 --slide-postAnimation-pos: translate(0px,0px);
             }
 
