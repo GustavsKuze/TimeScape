@@ -1,6 +1,4 @@
-
-/* Title Card */
-#titleCard {
+#slicerTitleCard {
     display: flex;
     align-items: center;
 
@@ -10,252 +8,36 @@
     transform: translateY(-32px);
 }
 
-    .cutImage {
-        width: 96px;
-        height: 96px;
+    #slicerTitleImage {
+    margin-right: 20px;
 
-        margin-right: 20px;
+    --slide-preAnimation-pos: translate(-100px,0px);
+    --slide-postAnimation-pos: translate(8px,0px);
     }
 
-    .titleCardText {
+    #slicerTitleCardText {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-        .titleCardLine1 {
-            position: relative;
+        #slicerTitleCardLine1 {
             margin-bottom: 5px;
 
-            font-size: 48px;
-            font-family: 'Ubuntu', sans-serif;
-        
-            color: #ff8800;
-            -webkit-text-stroke: 1px #925800;
-
-            transform: translate(-8px,-8px);
+            --slide-preAnimation-pos: translate(-150px,-8px);
+            --slide-postAnimation-pos: translate(-8px,-8px);
         }
 
-        .titleCardLine2 {
-            position: relative;
+        #slicerTitleCardLine2 {
             margin-top: 0px;
 
-            font-size: 32px;
-            font-family: 'Ubuntu', sans-serif;
-        
-            color: #ffc400;
-            -webkit-text-stroke: 1px #887400;
-
-            transform: translate(0px,-16px);
+            --slide-preAnimation-pos: translate(-150px,-16px);
+            --slide-postAnimation-pos: translate(0px,-16px);
         }
-
-/* Basic, Complex */
-#complexitySelection {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-
-    width: 100%;
-    transform: translateY(-86px);
-}  
-
-    .basic {
-        position: relative;
-        margin-bottom: 5px;
-
-        font-size: 32px;
-        font-family: 'Ubuntu', sans-serif;
     
-        color: #ffc400;
-        -webkit-text-stroke: 1px rgb(119, 71, 0);    
-        
-        background-color: #313131;
-        border-radius: 16px;
-        outline-color: #1e1c19;
-        outline-width: 4px;
-        outline-style: solid;
+    #slicerBackImage {
+        margin-left: 650px;
 
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-
-        transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
-    }
-
-    .basic:hover {
-        color: #ff8800;
-        -webkit-text-stroke: 1px rgb(59, 27, 0);  
-        
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-
-        transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
-    }
-
-    .complex {
-        position: relative;
-        margin-bottom: 5px;
-
-        font-size: 32px;
-        font-family: 'Ubuntu', sans-serif;
-    
-        color: #ffc400;
-        -webkit-text-stroke: 1px rgb(119, 71, 0);    
-        
-        background-color: #313131;
-        border-radius: 16px;
-        outline-color: #1e1c19;
-        outline-width: 4px;
-        outline-style: solid;
-
-        padding-left: 8px;
-        padding-right: 8px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-
-        transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
-    }
-
-    .complex:hover {
-        color: #ff8800;
-        -webkit-text-stroke: 1px rgb(59, 27, 0);  
-        
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-
-        transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
-    }
-
-
-/* Slicer Settings */
-#slicerSettingsContainer {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 32px;
-
-    width: 100%;   
-}
-
-/* None Picked */
-.unchosenTextBasic {
-    position: relative;
-    padding-left: 64px;
-    padding-right: 64px;
-    transform: translateY(-80px);    
-
-    font-size: 22px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-
-    color: #ff8800;
-    transition: color 0.3s ease;
-}
-
-.basic:hover ~ .unchosenTextBasic {
-    color: #ffc400; 
-    transition: color 0.3s ease;
-}
-
-.unchosenTextComplex {
-    position: relative;
-    padding-left: 64px;
-    padding-right: 64px;
-    transform: translateY(-120px);
-
-    font-size: 22px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-
-    color: #ff8800;
-    transition: color 0.3s ease;
-}
-
-.complex:hover ~ .unchosenTextComplex {
-    color: #ffc400; 
-    transition: color 0.3s ease;
-}
-
-/* Basic */
-#fileSelection {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-
-    width: 100%;
-    transform: translateY(-80px);     
-}
-
-    .filePath {
-        position: relative;
-
-        font-size: 24px;
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-
-        color: #ff8800;
-    }
-
-    .folderImage {
-        width: 48px;
-        height: 48px;
-
-        pointer-events: all;
-
-        transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
-    }
-
-    .folderImage:hover{
-        width: 64px;
-        height: 64px;
-        transform: rotate(10deg);
-
-        transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
-    }
-
-#errorBlock {
-    position: relative;
-
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-
-    width: 100%;   
-}
-
-    .errorImage {
-        width: 64px;
-        height: 64px;
-    }
-
-#validContent {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 32px;
-
-    width: 100%;   
-}
-
-    .videoPlayer {
-        background-color: #313131;
-        border-radius: 16px;
-        outline-color: #1e1c19;
-        outline-width: 4px;
-        outline-style: solid;
-
-        width: 80%;
+        --slide-preAnimation-pos: translate(150px,0px);
+        --slide-postAnimation-pos: translate(0px, 0px);
     }

@@ -1,29 +1,15 @@
 const slicerMenuContent = `
-    <div id="titleCard">
-        <img src="../../Assets/cut.png" alt="cutImage" class="cutImage">
+    <div id="slicerTitleCard">
+        <img src="../../Assets/cut.png" alt="titleImage" class="medium-static-icon animatable" id="slicerTitleImage">
+            <div id="slicerTitleCardText">
+                <p class="orange-48 animatable" id="slicerTitleCardLine1">Slicer</p>
+                <p class="yellow-32 animatable" id="slicerTitleCardLine2">Wallpaper Creator</p>
+            </div>
 
-        <div id="titleCardText">
-            <p class="titleCardLine1">TimeScape</p>
-            <p class="titleCardLine2">Image Slicer</p>
-        </div>
-    </div>
-
-    <!-- Simple/Advanced -->
-    <div id="complexitySelection">
-        <p class="basic" id="basic">Basic</p>
-        <p class="complex" id="complex">Complex</p>
-    </div>
-
-    <!-- Control -->
-    <div id="slicerSettingsContainer">
-        <p class="unchosenTextBasic">Basic complexity syncs the background to the time of day based on the set midnight.</p>
-        <p class="unchosenTextComplex">Complex syncs the background to major parts of the day based on the set timestamps and slows down and speeds up to sync to your locations time cycle.</p>
-    </div>
-
-    <div id="slicerOptions">
+        <img src="../../Assets/back.png" alt="backImage" class="medium-dynamic-icon animatable" id="slicerBackImage">
     </div>
 `
-const slicerMenuScripts = ["../SlicerPage/startAnimation.js"];
+const slicerMenuScripts = ["../SlicerPage/startAnimation.js", "../SlicerPage/clickManager.js"];
 
 // Load content
 container.innerHTML = slicerMenuContent;

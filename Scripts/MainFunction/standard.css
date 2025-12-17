@@ -100,7 +100,62 @@
     transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
+.medium-dynamic-icon {
+    pointer-events:all;
+
+    width: 96px;
+    height: 96px;
+
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.medium-dynamic-icon:hover {
+    width: 108px;
+    height: 108px;
+    transform: rotate(10deg);
+    
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+
 .medium-static-icon {
     width: 96px;
     height: 96px;
+}
+
+
+
+.button {
+    position: relative;
+
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffc400;
+    -webkit-text-stroke: 1px rgb(119, 71, 0);    
+    
+    background-color: #313131;
+    border-radius: 16px;
+    outline-color: #1e1c19;
+    outline-width: 4px;
+    outline-style: solid;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+    transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
+}
+
+.button:hover {
+    color: #ff8800;
+    -webkit-text-stroke: 1px rgb(59, 27, 0);  
+    
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
 }

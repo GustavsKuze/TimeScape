@@ -9,7 +9,11 @@ function loadScript(scriptSrc, targetContainer) {
 // Slicer Icon
 const cutImage = document.getElementById('cutImage');
 cutImage.addEventListener('click', () => {
-    loadScript("../SlicerPage/htmlInjector.js", container);
+    loadScript("../MainMenu/endAnimation.js", container);
+
+    setTimeout(() => {
+        loadScript("../SlicerPage/htmlInjector.js", container);
+    }, 2000); 
 });
 
 

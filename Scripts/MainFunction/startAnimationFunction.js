@@ -20,3 +20,17 @@ function startAnimation(elementId, durationSeconds = 1, delaySeconds = 0) {
         }, time);
     }, 0); 
 }
+
+function endAnimation(elementId, durationSeconds = 1, delaySeconds = 0) {
+    const element = document.getElementById(elementId);
+    if (!element) return;
+
+    // force the browser to refesh
+    const _ = element.offsetHeight; 
+    
+    // Change the class
+    element.classList.add('animatable');
+    setTimeout(() => {
+        element.classList.remove('postAnimation');
+    }, 0); 
+}
